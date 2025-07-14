@@ -1,0 +1,43 @@
+app:
+  ui:
+    language: zh_CN
+    theme: light
+camera:
+  connection:
+    buffer_size: 10
+    default_fps: 30.0
+    default_resolution:
+      height: 1080
+      width: 1920
+    max_devices: 3
+  device_names:
+    0: iPhone
+    1: Mac
+  writer:
+    queue_size: 1000
+imu:
+  connection:
+    buffer_size: 200
+    max_devices: 3
+    reconnect_attempts: 5
+    reconnect_delay: 5.0
+  device_names:
+    466E8FA0-E076-997B-02F9-3F6F3F7D19D1: imu948-normal
+    7A53F7A2-004F-E5EB-14EB-4187B4FBF104: imu948-ring
+  scan:
+    duration: 5.0
+    name_filter:
+    - im948
+  writer:
+    queue_size: 1000
+logging:
+  file_path: /Users/aksea/Project/Python/WaveTrack/logs
+  level: INFO
+multiprocess:
+  management:
+    monitor_interval: 1.0
+    shutdown_timeout: 5.0
+    startup_timeout: 10.0
+  processes:
+    camera_count: 1
+    imu_count: 0
