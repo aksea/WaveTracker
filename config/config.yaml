@@ -39,5 +39,5 @@ multiprocess:
     shutdown_timeout: 5.0
     startup_timeout: 10.0
   processes:
-    camera_count: 1
-    imu_count: 0
+    camera_count: 2
+    imu_count: 1
